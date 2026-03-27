@@ -7,6 +7,16 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello, World from Spring MVC!";
+        return "Hello World update";
+    }
+
+    @GetMapping("/user")
+    public String userPage() {
+        return "User can access";
+    }
+
+    @GetMapping("/admin")
+    public String adminPage() {
+        return "Admin can access";
     }
 }

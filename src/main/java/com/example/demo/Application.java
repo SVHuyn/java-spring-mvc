@@ -2,18 +2,12 @@ package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class Application {
-
+public final class Application {
 	public static void main(String[] args) {
-		
 
-		ApplicationContext testBeanContext = SpringApplication.run(Application.class, args);
-		for (String s : testBeanContext.getBeanDefinitionNames()) {
-			System.out.println(s);
-		}
+		SpringApplication.run(Application.class, args);
 	}
 
 }
